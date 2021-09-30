@@ -1,0 +1,95 @@
+# .gitignore
+
+# -------------
+# general
+# -------------
+
+# ignore all files starting with underscore
+_*
+
+# -------------
+# folders
+# -------------
+
+# -- /data ----
+!data/
+data/*
+!/data/README.md
+
+# -- /data/acs
+!/data/acs
+/data/acs/*
+!/data/acs/README.md
+
+# -- /data/broadband
+!/data/broadband
+/data/broadband/*
+!/data/broadband/README.md
+
+# -- /data/clean
+!/data/clean
+/data/clean/*
+!/data/clean/README.md
+
+# -- /data/crosswalks
+!/data/crosswalks
+/data/crosswalks/*
+!/data/crosswalks/README.md
+
+# -- /data/holc
+!/data/holc
+/data/holc/*
+!/data/holc/README.md
+
+# -- /data/tiger
+!/data/tiger
+/data/tiger/*
+!/data/tiger/README.md
+
+# -- /estimates
+!/estimates
+/estimates/*
+!/estimates/README.md
+
+# -- /scripts/stan
+!/scripts/stan
+/scripts/stan/*
+!/scripts/stan/model_acs.stan
+!/scripts/stan/model_fcc_beta.stan
+
+# -------------
+# TeX
+# -------------
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fff
+*.fls
+*.lof
+*.log
+*.lot
+*.nav
+*.out
+*.run.xml
+*.snm
+*..synctex.gz
+*.toc
+*.ttt
+
+# -------------
+# R
+# -------------
+*.Rhistory
+*.Rproj
+
+# -------------
+# compiled
+# -------------
+*.o
+
+# -------------
+# MacOS
+# -------------
+*.DS_Store
