@@ -37,7 +37,7 @@ stan_opts := $(SCR_DIR)/r/macros_stan.R
 
 # --- build targets ------------------------------
 
-all: setup data analysis tables figures doc
+all: setup get data analysis tables figures doc
 
 data: $(acs_dat) $(bbd_dat) $(cln_acs_dat) $(cln_fcc_dat)
 analysis: $(acs_preds) $(fcc_beta_preds) 
@@ -45,12 +45,18 @@ tables: $(tab_output)
 figures: $(fig_output)
 doc: $(doc_output)
 
-.PHONY: all setup data analysis tables figures doc
+.PHONY: all setup get data analysis tables figures doc
 
 # --- packages -----------------------------------
 
 setup: $(SCR_DIR)/r/check_packages.R
 	@echo "Checking for and installing necessary R packages"
+	Rscript $< .
+
+# --- get data -----------------------------------
+
+get: $(SCR_DIR)/r/get_data.R
+	@echo "Checking for and downloading raw data"
 	Rscript $< .
 
 # --- clean data ---------------------------------
