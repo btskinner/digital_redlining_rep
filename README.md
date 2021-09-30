@@ -28,3 +28,8 @@ the `digital_redlining_rep/scripts/r` directory:
 1. `analysis_acs.R`
 1. `make_tables.R`
 1. `make_figures.R`
+
+#### Data size
+
+Note that the raw Census, FCC, TIGER/Line data files are quite large
+and can take a while to download.
