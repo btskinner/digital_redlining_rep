@@ -172,6 +172,8 @@ acs_url <- file.path(cenftp, "programs-surveys", "acs", "summary_file",
 
 ## download data
 get_data(acs_files, acs_url, acs_dir)
+unzip(file.path(acs_dir, acs_files),
+      exdir = file.path(acs_dir, "2019_5yr_Summary_FileTemplates"))
 
 ## --------------
 ## mini geo
