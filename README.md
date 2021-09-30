@@ -1,6 +1,6 @@
 This repository contains the replication files for  
 
-> Skinner, B.T., Levy, Hazel, and Burtch, Taylor (2021). Digital
+> Skinner, B.T., Levy, H., and Burtch, T. (2021). Digital
 > redlining: the relevance of 20th century housing policy on 21st
 > century broadband access for education
 
