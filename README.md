@@ -14,4 +14,17 @@ cd ./digital_redlining_rep
 make
 ```
 
-Or, after cloning the repository, run the R scripts one by one:
+### Run scripts separately
+
+Or, after cloning the repository, run the R scripts one by one from
+the `digital_redlining_rep/scripts/r` directory:
+
+1. `get_data.R`
+1. `check_packages.R`
+1. `make_data_acs.R`
+1. `make_data_bb.R`
+1. `make_data_clean.R`
+1. `analysis_fcc_beta.R`
+1. `analysis_acs.R`
+1. `make_tables.R`
+1. `make_figures.R`
