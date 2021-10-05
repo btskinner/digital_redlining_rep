@@ -6,20 +6,29 @@ This repository contains the replication files for
 
 ## To run
 
-Clone the project repository, `cd` into project directory, and run the `makefile`:
+1. Clone the project repository and `cd` into project directory 
+
+``` bash
+git clone https://github.com/btskinner/civic_returns_pf_rep.git
+```
+
+2. Download data and place into the proper directories
+
+See the README file in the `data` directory for links to the data
+files you'll need. Please note that the raw Census, FCC, TIGER/Line
+data files are quite large and can take a while to download.
+
+3. Run scripts
+
+Either `cd` into the main directory and run the `makefile`:
 
 ```bash
-git clone https://github.com/btskinner/civic_returns_pf_rep.git
 cd ./digital_redlining_rep
 make
 ```
-
-### Run scripts separately
-
-Or, after cloning the repository, run the R scripts one by one from
+Alternately, after cloning the repository, run the R scripts one by one from
 the `digital_redlining_rep/scripts/r` directory:
 
-1. `get_data.R`
 1. `check_packages.R`
 1. `make_data_acs.R`
 1. `make_data_bb.R`
@@ -29,7 +38,27 @@ the `digital_redlining_rep/scripts/r` directory:
 1. `make_tables.R`
 1. `make_figures.R`
 
-#### Data size
+## Required software
 
-Note that the raw Census, FCC, TIGER/Line data files are quite large
-and can take a while to download.
+Data cleaning and most analyses for this project are completed using the [R
+language](https://cran.r-project.org). For Bayesian models, we use the
+[Stan language](https://mc-stan.org) through the
+[`cmdstanr`](https://mc-stan.org/cmdstanr/) interface. We use the
+following R packages:
+
+- [crosswalkr](https://CRAN.R-project.org/package=crosswalkr)
+- [cmdstanr](https://mc-stan.org/cmdstanr/)
+- [data.table](https://CRAN.R-project.org/package=data.table)
+- [devtools](https://CRAN.R-project.org/package=devtools)
+- [ggthemes](https://CRAN.R-project.org/package=ggthemes)
+- [gtools](https://CRAN.R-project.org/package=gtools)
+- [knitr](https://CRAN.R-project.org/package=knitr)
+- [lubridate](https://CRAN.R-project.org/package=lubridate)
+- [patchwork](https://CRAN.R-project.org/package=patchwork)
+- [rstan](https://CRAN.R-project.org/package=rstan)
+- [readxl](https://CRAN.R-project.org/package=readxl)
+- [sf](https://CRAN.R-project.org/package=sf)
+- [tidyverse](https://CRAN.R-project.org/package=tidyverse)
+- [xtable](https://CRAN.R-project.org/package=xtable)
+
+
